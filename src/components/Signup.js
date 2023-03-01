@@ -8,6 +8,11 @@ function Signup() {
                 <form action=''>
                     <h2>Sign up</h2>
                     <div className='inputbox'>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type='name' required/>
+                        <label for=''>Name</label>
+                    </div>
+                    <div className='inputbox'>
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type='email' required/>
                         <label for=''>Email</label>
@@ -21,7 +26,7 @@ function Signup() {
                         <label for=''><input type='checkbox'></input>Remember me?</label>
                         {/* <a  className='forgotlink' href='#'>Forgot password?</a> */}
                     </div>
-                    <button type='submit'>Register Free</button>
+                    <button type='submit'>Free Sign up</button>
                     <div className='register'>
                         <p>Don't have an account? <a href='#'> Log in</a> </p>
                     </div>

@@ -132,3 +132,35 @@ button{
   background-position: center;
   background-size: cover;
 }
+
+/* Home page */
+.home{
+
+}
+.card-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+
+}
+.home-img {
+  border-radius: 5px 5px 0 0;
+}
+.card-avatar:hover{
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+.container {
+  padding: 2px 16px;
+}
+
+/* Project Cards */
+.project-card{
+  
+}
