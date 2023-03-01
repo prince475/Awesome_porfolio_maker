@@ -6,7 +6,7 @@ function Signup() {
         <div className='form-box'>
             <div className='form-value'>
                 <form action=''>
-                    <h2>Login</h2>
+                    <h2>Sign up</h2>
                     <div className='inputbox'>
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type='email' required/>
@@ -19,11 +19,11 @@ function Signup() {
                     </div>
                     <div className='forget'>
                         <label for=''><input type='checkbox'></input>Remember me?</label>
-                        <a  className='forgotlink' href='#'>Forgot password?</a>
+                        {/* <a  className='forgotlink' href='#'>Forgot password?</a> */}
                     </div>
-                    <button type='submit'>Login</button>
+                    <button type='submit'>Register Free</button>
                     <div className='register'>
-                        <p>Don't have an account? <a href='#'>register</a> </p>
+                        <p>Don't have an account? <a href='#'> Log in</a> </p>
                     </div>
                 </form>
             </div>
