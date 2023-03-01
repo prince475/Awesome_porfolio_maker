@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'poppins',sans-serif;
+
+  /* Login-form */
 }
 .login-section{
   display: flex;
@@ -9,9 +11,7 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color:blueviolet;
-  
-  /* background: url('../images/desk.....jpg')no-repeat; */
+  background-color:rgb(124, 4, 104);
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/desk.....jpg);
   background-position: center;
   background-size: cover;
@@ -88,7 +88,7 @@ top: -5px;
 }
 .forgotlink{
   text-decoration: none;
-  color: grey;
+  color: rgb(152, 38, 118);
   
 }
 .forget label a:hover{
@@ -113,7 +113,7 @@ button{
 }
 .register p a{
   text-decoration: none;
-  color: grey;
+  color: rgb(152, 38, 118);
   font-weight: 600;
 }
 .register p a:hover{
