@@ -8,7 +8,7 @@ function Home() {
             <img src="images/icon.png" alt="Avatar" className='home--img'/>
             <div class="container">
                 <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
+                <p>Software Engineer</p>
             </div>
         </div>
         <form className='project-card'>
