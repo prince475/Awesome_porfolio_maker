@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import icon from '../images/icon.png'
 import './Home.css'
-import HomeCard from './HomeCard'
+import ProfileCard from './ProfileCard'
 
 function Home() {
 
@@ -10,7 +10,7 @@ function Home() {
 
 
   useEffect( ()=>{
-      fetch("http://127.0.0.1:9292/project")
+      fetch("http://127.0.0.1:9292/skill")
       .then(res => res.json())
       .then(data =>{
           console.log(data)
@@ -26,7 +26,7 @@ function Home() {
 
 
   function deleteProject(id){
-      fetch(`http://127.0.0.1:9292/projects/destroy/${id}`,{
+      fetch(`http://127.0.0.1:9292/skills/destroy/${id}`,{
         method: "DELETE"
       })
       .then(()=>{
@@ -44,8 +44,8 @@ function Home() {
         <div className='card-avatar'>
             <img src={icon} alt="Avatar" className='home-img' width={100}/>
             <div class="container">
-                <h4><b>John Doe</b></h4>
-                <p>Software Engineer</p>
+                <h4><b>User</b></h4>
+                {/* <p>Software Engineer</p> */}
             </div>
         </div>
         <div className="registration">
@@ -61,7 +61,7 @@ function Home() {
                 <div className="r-right"></div>    
                 <div className="flex-container">
                    
-                    {profile.map((value)=><HomeCard title={value.title} description={value.description} key={value.id} id={value.id} deleteProject={deleteProject}/>)}
+                    {profile.map((value)=><ProfileCard name={value.name} description={value.description} key={value.id} id={value.id} deleteProject={deleteProject}/>)}
 
                 </div>
             </div>

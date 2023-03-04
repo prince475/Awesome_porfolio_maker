@@ -1,10 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Raleway:ital,wght@0,300;0,600;1,700&family=Sen:wght@400;700;800&display=swap');
+
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'poppins',sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Sen', sans-serif;
+}
+/* body */
+/* body {
+  background-color: black;
+  color: #fff;
+} */
+
+/* left section */
+/* .left-section {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  width: 30%;
+} */
+
+
 
   /* Login-form */
-}
 .login-section{
   display: flex;
   justify-content: center;
@@ -12,12 +32,14 @@
   min-height: 100vh;
   width: 100%;
   background-color:rgb(124, 4, 104);
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/desk.....jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg);
   background-position: center;
   background-size: cover;
 }
 .form-box{
-  position: relative;
+  position: absolute;
+  top: 35%;
+  right: 15%;
   width: 400px;
   height: 450px;
   background: transparent;
@@ -128,10 +150,11 @@ button{
   min-height: 100vh;
   width: 100%;
   background-color:rgb(124, 4, 104);
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/desk.....jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg);
   background-position: center;
   background-size: cover;
 }
+
 
 /* Home page */
 .home{
@@ -141,8 +164,8 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height:100vh;
-  width: 100%;
+  min-height:20vh;
+  width: 30%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -160,7 +183,175 @@ button{
   padding: 2px 16px;
 }
 
+/* Navbar */
+.nav-menu{
+  display: flex;  
+}
+.nav-menu li {
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  list-style: none;
+  
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: purple transparent;
+}
+.nav-header{
+display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+
+
 /* Project Cards */
 .project-card{
   
+}
+
+
+/* home card */
+body{
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+  display:grid
+}
+
+.registration{
+  display: flex;
+}
+.r-left{
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+
+.r-right{
+  display: flex;
+  position: relative;
+  margin-left: -2em;
+}
+
+.r-container{
+  background-color: var(--SixthColor);
+  height: 670px;
+  width: 20%;
+  
+}
+
+.flex-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px;
+}
+
+.r-title{
+  color: var(--BodyColor);
+  font-size: 40px;
+  margin-top: 2rem;
+  font-family: 'Mynerve', cursive;
+}
+
+.project-title{
+  font-size: 30px;
+  margin-bottom: 0.5em;
+  margin-top: -1em;
+  color: var(--BodyColor);
+  font-family: 'Mynerve', cursive;
+}
+
+.skills-title{
+  font-size: 30px;
+  margin-bottom: 0.5em;
+  margin-top:-1em;
+  color: var(--BodyColor);
+  font-family: 'Mynerve', cursive;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+
+.projects-card{
+  background-color: var(--FirstColor);
+  width: 20rem;
+  margin-top: 3em;
+  margin-left: 10em;
+  padding: 3em;
+  height: 230px;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.projects-card:hover{
+  transform: scale(1.0);
+  transition: transform 0.2s ease-out;
+}
+
+.skills-card{
+  background-color: var(--FirstColor);
+  width: 20rem;
+  margin-top: 3em;
+  margin-left: 10em;
+  padding: 3em;
+  height: 230px;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skills-card:hover{
+  transform: scale(1.0);
+  transition: transform 0.2s ease-out;
+}
+
+.project-list{
+  font-size: 20px;
+  color: var(--FifthColor);
+  font-family: "Poppins", sans-serif;
+
+}
+
+.skill-list{
+  font-size: 20px;
+  color: var(--FifthColor);
+  font-family: "Poppins", sans-serif;
+}
+
+.edit-btn{
+  background: var(--SixthColor);
+  color: var(--FourthColor);
+  font-family: inherit;
+  border-radius: 8px;
+  padding: 12px 28px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  font-family:"Poppins", sans-serif;
+  letter-spacing: 1px;
+  margin-left: 50rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover{
+  background-color: var(--SecondColor);
+  color: var(--FirstColor);
+  transform: scale(0.9);
+  transition: transform 0.2s ease-out;
 }
