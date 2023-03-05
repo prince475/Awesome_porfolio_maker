@@ -87,28 +87,28 @@ function handleAddSkil(){
             </div>
         </div>
 
-        <form className="">
-            <input type="text"  value={title}
+        <form className="add-project">
+            <input className='input' type="text"  value={title}
             onChange={(e)=>{
                 e.preventDefault()
                 setTitle(e.target.value)
             }} placeholder="Title"></input>
-            <input type="text" value={description}
+            <input className='input' type="text" value={description}
             onChange={(e)=>{
                 e.preventDefault()
                 setDescription(e.target.value)
             }}
             placeholder="Description"></input>
-            <button type="submit" onClick={handleAddDesciption}> Add Project</button>
+            <button type="submit" onClick={handleAddDesciption} className="add-project-btn"> Add Project</button>
         </form>   
 
-        <form className="">
-            <input type="text"  value={skills}
+        <form className="add-project">
+            <input type="text" className='input' value={skills}
             onChange={(e)=>{
                 e.preventDefault()
                 setSkills(e.target.value)
             }} placeholder="Title"></input>
-            <button type="submit" onClick={handleAddSkil}> Add Skill</button>
+            <button type="submit" onClick={handleAddSkil} className="add-project-btn" > Add Skill</button>
         </form>   
         <div className="registration">
             <div className="r-container">

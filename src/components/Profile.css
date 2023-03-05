@@ -26,7 +26,7 @@ body{
 
 .r-container{
     background-color: var(--SixthColor);
-    height: 670px;
+    height: 650px;
     width: 20%;
     
 }
@@ -74,9 +74,9 @@ body{
     background-color: var(--FirstColor);
     width: 20rem;
     margin-top: 3em;
-    margin-left: 10em;
+    margin-left: -22em;
     padding: 3em;
-    height: 230px;
+    height: 150px;
     border-radius: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -138,3 +138,24 @@ body{
     transform: scale(0.9);
     transition: transform 0.2s ease-out;
 }
+
+.add-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.input{
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .add-project-btn{
+    background-color: green;
+    color: white;
+    width: 10%;
+  }
