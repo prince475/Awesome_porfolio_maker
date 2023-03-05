@@ -7,7 +7,7 @@ My portfolio App is an a web application that allows people to share the project
 
 ## Screenshot
 
-<img src="">
+<img src="src/images/front-end.png">
 
 ## Development Requirement
 - Visual StudioCode.
