@@ -1,7 +1,7 @@
 # MY-PORTFOLIO-APP
 
 ## Description
-Welcome to **Bokshelf**. Bookshelf is an application that allows users to browse and discover new books, as well as keep track of their personal reading collection.
+Welcome to **My-Portfolio-App**. Bookshelf is an application that allows users to browse and discover new books, as well as keep track of their personal reading collection.
   Enjoy the experience Cheers!
 
 ## Screenshot
