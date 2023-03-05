@@ -52,8 +52,7 @@ function Home() {
             <div className="r-container">
                     <div className="r-left">
                     <p className="r-title">Bio</p>
-
-
+                    
                  </div>
             </div>
 

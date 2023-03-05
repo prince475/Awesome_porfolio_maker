@@ -12,9 +12,7 @@ export default function ProjectCard({title,description,id, deleteProject}) {
         <div key={id} className="projects-card">
                 <p className="project-title">{title}</p>
                 <p>{description}</p>
-                <button onClick={()=> deleteProject(id)}>delete</button>
-                {/* <button key={id} onClick={()=> deleteProject(id)}><ion-icon name="trash-outline"></ion-icon></button> */}
-                
+                <button onClick={()=> deleteProject(id)}>delete</button>                
         </div> 
       
     </div>

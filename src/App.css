@@ -149,10 +149,30 @@ button{
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  position: absolute;
+  top: 0;
   background-color:rgb(124, 4, 104);
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg);
   background-position: center;
   background-size: cover;
+}
+/* .form-box-signup{
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+.sgnup-form{
+  position: absolute;
 }
 
 
@@ -354,4 +374,12 @@ body{
   color: var(--FirstColor);
   transform: scale(0.9);
   transition: transform 0.2s ease-out;
+}
+
+.show{
+  display: block;
+}
+
+.noShow{
+  display: none;
 }
