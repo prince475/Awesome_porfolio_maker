@@ -11,12 +11,17 @@ export default function ProfileCard({name, id, deleteSkill}) {
     <div>
         <div key={id}>
 
-            <div key={id} className="projects-card">
+            <div key={id} className="skills-card">
                     <p className="project-title">{name}</p>
                     <button onClick={()=> deleteSkill(id)}>delete</button>                
             </div> 
-        
         </div>
+            {/* <div key={id}>
+                <div key={id} className="skills-card">
+                    <p className="project-title">{name}</p>
+                    <button onClick={()=> deleteSkill(id)}>delete</button>                
+            </div> 
+        </div> */}
     </div>
   )
 }

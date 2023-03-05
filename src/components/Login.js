@@ -62,7 +62,7 @@ function Login() {
                 {/* <div className='left-section'>
                     ABOUT US
                 </div> */}
-                <div className='form-box'>
+                <div className='form-box-login'>
                     <div className='form-value'>
                         <form action=''  onSubmit={(e)=> e.preventDefault()}>
                             <h2>Login</h2>

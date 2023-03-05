@@ -7,12 +7,9 @@
   font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Sen', sans-serif;
+  
 }
-/* body */
-/* body {
-  background-color: black;
-  color: #fff;
-} */
+body
 
 /* left section */
 /* .left-section {
@@ -32,11 +29,25 @@
   min-height: 100vh;
   width: 100%;
   background-color:rgb(124, 4, 104);
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg);
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg); */
   background-position: center;
   background-size: cover;
 }
 .form-box{
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box-login{
   position: absolute;
   top: 35%;
   right: 15%;
@@ -49,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 h2{
   font-size: 2em;
@@ -149,8 +161,8 @@ button{
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
   background-color:rgb(124, 4, 104);
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/desk.....jpg);
   background-position: center;
@@ -171,9 +183,7 @@ button{
   align-items: center;
 
 } */
-.sgnup-form{
-  position: absolute;
-}
+
 
 
 /* Home page */
@@ -217,6 +227,7 @@ button{
 .nav-menu li a {
   text-decoration: none;
   color: purple transparent;
+  padding: 250px;
 }
 .nav-header{
 display: flex; 
@@ -229,152 +240,7 @@ display: flex;
 
 
 /* Project Cards */
-.project-card{
-  
-}
 
-
-/* home card */
-body{
-  max-width: 100%;
-  font-family: "Poppins", sans-serif;
-  display:grid
-}
-
-.registration{
-  display: flex;
-}
-.r-left{
-  display: flex;
-  position: relative;
-  flex: 1;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-
-
-.r-right{
-  display: flex;
-  position: relative;
-  margin-left: -2em;
-}
-
-.r-container{
-  background-color: var(--SixthColor);
-  height: 670px;
-  width: 20%;
-  
-}
-
-.flex-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  float: left;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 20px;
-}
-
-.r-title{
-  color: var(--BodyColor);
-  font-size: 40px;
-  margin-top: 2rem;
-  font-family: 'Mynerve', cursive;
-}
-
-.project-title{
-  font-size: 30px;
-  margin-bottom: 0.5em;
-  margin-top: -1em;
-  color: var(--BodyColor);
-  font-family: 'Mynerve', cursive;
-}
-
-.skills-title{
-  font-size: 30px;
-  margin-bottom: 0.5em;
-  margin-top:-1em;
-  color: var(--BodyColor);
-  font-family: 'Mynerve', cursive;
-}
-
-.flex-container{
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-
-
-.projects-card{
-  background-color: var(--FirstColor);
-  width: 20rem;
-  margin-top: 3em;
-  margin-left: 10em;
-  padding: 3em;
-  height: 230px;
-  border-radius: 18px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-}
-
-.projects-card:hover{
-  transform: scale(1.0);
-  transition: transform 0.2s ease-out;
-}
-
-.skills-card{
-  background-color: var(--FirstColor);
-  width: 20rem;
-  margin-top: 3em;
-  margin-left: 10em;
-  padding: 3em;
-  height: 230px;
-  border-radius: 18px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.skills-card:hover{
-  transform: scale(1.0);
-  transition: transform 0.2s ease-out;
-}
-
-.project-list{
-  font-size: 20px;
-  color: var(--FifthColor);
-  font-family: "Poppins", sans-serif;
-
-}
-
-.skill-list{
-  font-size: 20px;
-  color: var(--FifthColor);
-  font-family: "Poppins", sans-serif;
-}
-
-.edit-btn{
-  background: var(--SixthColor);
-  color: var(--FourthColor);
-  font-family: inherit;
-  border-radius: 8px;
-  padding: 12px 28px;
-  border: none;
-  font-weight: 400;
-  font-size: 18px;
-  cursor: pointer;
-  font-family:"Poppins", sans-serif;
-  letter-spacing: 1px;
-  margin-left: 50rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.edit-btn:hover{
-  background-color: var(--SecondColor);
-  color: var(--FirstColor);
-  transform: scale(0.9);
-  transition: transform 0.2s ease-out;
-}
 
 .show{
   display: block;

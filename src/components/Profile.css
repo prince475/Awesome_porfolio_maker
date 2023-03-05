@@ -70,7 +70,7 @@ body{
 }
 
 
-.projects-card{
+.skills-card{
     background-color: var(--FirstColor);
     width: 20rem;
     margin-top: 3em;
@@ -82,12 +82,12 @@ body{
 
 }
 
-.projects-card:hover{
+.skills-card:hover{
     transform: scale(1.0);
     transition: transform 0.2s ease-out;
 }
 
-.skills-card{
+/* .skills-card{
     background-color: var(--FirstColor);
     width: 20rem;
     margin-top: 3em;
@@ -101,7 +101,7 @@ body{
 .skills-card:hover{
     transform: scale(1.0);
     transition: transform 0.2s ease-out;
-}
+} */
 
 .project-list{
     font-size: 20px;

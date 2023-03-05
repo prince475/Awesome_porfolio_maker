@@ -59,7 +59,7 @@ body{
     font-size: 30px;
     margin-bottom: 0.5em;
     margin-top:-1em;
-    color: var(--BodyColor);
+    color: rgb(254, 254, 253);
     font-family: 'Mynerve', cursive;
 }
 
@@ -71,7 +71,7 @@ body{
 
 
 .projects-card{
-    background-color: var(--FirstColor);
+    background-color:rgb(240, 193, 241);
     width: 20rem;
     margin-top: 3em;
     margin-left: 10em;
@@ -87,7 +87,7 @@ body{
     transition: transform 0.2s ease-out;
 }
 
-.skills-card{
+/* .skills-card{
     background-color: var(--FirstColor);
     width: 20rem;
     margin-top: 3em;
@@ -101,7 +101,7 @@ body{
 .skills-card:hover{
     transform: scale(1.0);
     transition: transform 0.2s ease-out;
-}
+} */
 
 .project-list{
     font-size: 20px;
@@ -137,4 +137,7 @@ body{
     color: var(--FirstColor);
     transform: scale(0.9);
     transition: transform 0.2s ease-out;
+}
+.title.h2{
+    color: blue;
 }
