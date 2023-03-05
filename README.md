@@ -22,9 +22,9 @@ If you want to see the app running in real-time directly, you can just click on 
 
 ### Option 2 (Cloning the repository)
 1. Cloning the repository:
-press git clone https://github.com/Yuongren/bookshelf-project on your terminal
+press git clone https://github.com/Jobwawesh/my-portfolio-app-frontend on your terminal
 2. Move to the folder and install requirements
-3. `cd bookshelf-project`
+3. `my-portfolio-app-frontend`
 4. Open the directory with your preferd application(prefereably VScode)
 5. Make sure you `install npm` for the required dependancies to be added.
 6. Open the application on your prefered browser.
