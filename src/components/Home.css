@@ -87,22 +87,6 @@ body{
     transition: transform 0.2s ease-out;
 }
 
-/* .skills-card{
-    background-color: var(--FirstColor);
-    width: 20rem;
-    margin-top: 3em;
-    margin-left: 10em;
-    padding: 3em;
-    height: 230px;
-    border-radius: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.skills-card:hover{
-    transform: scale(1.0);
-    transition: transform 0.2s ease-out;
-} */
-
 .project-list{
     font-size: 20px;
     color: var(--FifthColor);

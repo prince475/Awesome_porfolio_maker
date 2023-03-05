@@ -19,7 +19,7 @@ To get the code .
 ## project Set-up
 ### Option 1 (live link)
 If you want to see the app running in real-time directly, you can just click on this link:
-[https://bookshelf-goup4-project.vercel.app/]
+[https://my-portfolio-app-frontend.vercel.app/]
 
 ### Option 2 (Cloning the repository)
 1. Cloning the repository:
@@ -33,7 +33,7 @@ press git clone https://github.com/Jobwawesh/my-portfolio-app-frontend on your t
 
 ## Running the Application and Features
 ### User Story
-- This Application works with fetched data  from a remote server. The API used was created specifically for this app: https://developers.google.com/books/docs/overview 
+- This Application works with fetched data  from a remote server. The API used was created specifically for this app: https://my-app-backend-portfolio.onrender.com/project 
 - The first thing you will notice when you load the page is the login page where you need to either login if you have an account or signup if not. 
 - Once you create an account you will be able to see other peoples,projects on your home page.
 - On the profile section, you will be able to see a list of skills.
