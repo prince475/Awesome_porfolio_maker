@@ -250,3 +250,13 @@ display: flex;
   display: none;
 }
 
+.about-section{
+  padding: 8rem;
+  text-align: center;
+  min-width: 100vh;
+  height: 100%;
+  position: absolute;
+  color: #fff;
+
+}
+

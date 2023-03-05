@@ -62,6 +62,10 @@ function Login() {
                 {/* <div className='left-section'>
                     ABOUT US
                 </div> */}
+                <div className='about-section'>
+                    <h1>Welcome to My Portfolio App</h1>
+
+                </div>
                 <div className='form-box-login'>
                     <div className='form-value'>
                         <form action=''  onSubmit={(e)=> e.preventDefault()}>
