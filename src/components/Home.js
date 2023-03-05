@@ -15,12 +15,6 @@ function Home() {
       .then(data =>{
           console.log(data)
           setProfile(data)
-          // data.map(element => {
-          //     setTitle(element.title)
-          //     console.log(title)
-          //     setDescription(element.description)
-          //     console.log(description)
-          // });
       })
   },[])
 

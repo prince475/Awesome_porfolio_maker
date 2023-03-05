@@ -82,7 +82,7 @@ function Login() {
                             </div>
                             <button type='submit' onClick={(e)=>{
                                 e.preventDefault()
-                                showing()
+                                
                                 ()}
                                 } >Login</button>
                             <div className='register' id='register'>
