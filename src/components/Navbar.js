@@ -13,7 +13,7 @@ function Navbar() {
             <Link className='navbar' to="/profile">Profile</Link>
           </li>
           <li>
-            <Link className='navbar' to="/login">Log out <ion-icon name="log-out-outline"></ion-icon></Link>
+            <Link className='navbar' to="/login">Logout <ion-icon name="log-out-outline"></ion-icon></Link>
           </li>
         </ul>
       </div>
