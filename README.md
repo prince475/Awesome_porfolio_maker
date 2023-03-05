@@ -1,12 +1,13 @@
 # MY-PORTFOLIO-APP
 
 ## Description
-Welcome to **My-Portfolio-App**. Bookshelf is an application that allows users to browse and discover new books, as well as keep track of their personal reading collection.
-  Enjoy the experience Cheers!
+Welcome to **My-Portfolio-App**. <br>
+My portfolio App is an a web application that allows people to share the projects they are currently working on. It encourages creativity and innovation through seeing what the current trends are. You can also manage your own portfolio with the ability to add, uodate and delete your portfolio projects.
+  <br>Enjoy the experience Cheers!
 
 ## Screenshot
 
-<img src="Screenshot1.png">
+<img src="">
 
 ## Development Requirement
 - Visual StudioCode.
@@ -32,10 +33,12 @@ press git clone https://github.com/Jobwawesh/my-portfolio-app-frontend on your t
 
 ## Running the Application and Features
 ### User Story
-- This Application works with fetched data  from a remote server. The API used is Google Books API: https://developers.google.com/books/docs/overview 
-- The first thing you will notice when you load the page is a a well documented description about the  Bookshelf app. 
-- The app provides you with a search engine which helps filter out the books you are most interested in.
-- Where you see a book you would like, you can click the add butttonand it will add the book to your bookshelf where you can revist everytime you wish to.
+- This Application works with fetched data  from a remote server. The API used was created specifically for this app: https://developers.google.com/books/docs/overview 
+- The first thing you will notice when you load the page is the login page where you need to either login if you have an account or signup if not. 
+- Once you create an account you will be able to see other peoples,projects on your home page.
+- On the profile section, you will be able to see a list of skills.
+- You are able to add your own projects on your profile where they will be displayed  on the homme page.
+- You can add or delete both your skills and projects.
  
 
 # THERE YOU GO! YOU CAN NOW ACTIVELY ENGAGE WITH THE APPLICATION. HAVE FUN!
