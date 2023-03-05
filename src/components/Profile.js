@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import icon from '../images/icon.png'
-import './Home.css'
+import './Profile.css'
 import ProfileCard from './ProfileCard'
 
 function Home() {
@@ -9,10 +9,15 @@ function Home() {
   const [profile, setProfile] = useState([])
   const [title, setTitle] = useState([])
   const [description, setDescription] = useState([])
+  const [skills, setSkills] = useState([])
 
   let projectToken = {
     "title": title,
     "description": description
+  }
+
+  let skillToken = {
+    "name" : skills
   }
 
 
@@ -35,7 +40,7 @@ function Home() {
       })
   }
 
-  function handleLogIn(){
+  function handleAddDesciption(){
 
     fetch('http://127.0.0.1:9292/project/create',{
         method: 'POST',
@@ -51,6 +56,21 @@ function Home() {
 })
 }
 
+function handleAddSkil(){
+
+    fetch('http://127.0.0.1:9292/skill/create',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(skillToken)
+    })
+    .then(res => res.json())
+    .then((data)=>{
+    console.log(data)
+
+})
+}
 
 
 
@@ -66,12 +86,34 @@ function Home() {
                 {/* <p>Software Engineer</p> */}
             </div>
         </div>
+
+        <form className="">
+            <input type="text"  value={title}
+            onChange={(e)=>{
+                e.preventDefault()
+                setTitle(e.target.value)
+            }} placeholder="Title"></input>
+            <input type="text" value={description}
+            onChange={(e)=>{
+                e.preventDefault()
+                setDescription(e.target.value)
+            }}
+            placeholder="Description"></input>
+            <button type="submit" onClick={handleAddDesciption}> Add Project</button>
+        </form>   
+
+        <form className="">
+            <input type="text"  value={skills}
+            onChange={(e)=>{
+                e.preventDefault()
+                setSkills(e.target.value)
+            }} placeholder="Title"></input>
+            <button type="submit" onClick={handleAddSkil}> Add Skill</button>
+        </form>   
         <div className="registration">
             <div className="r-container">
                     <div className="r-left">
                     <p className="r-title">Skills</p>
-
-
                  </div>
             </div>
 
@@ -85,11 +127,7 @@ function Home() {
             </div>
         </div>  
         <div className="add-project"></div>   
-        <form className="">
-            <input type="text" placeholder="Title"></input>
-            <input type="text" placeholder="Description"></input>
-            <button type="submit"></button>
-        </form>   
+        
       </div>
     </div>
   )

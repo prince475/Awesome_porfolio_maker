@@ -94,50 +94,50 @@ function Login() {
                 </div>
 
 
-                <div className='signup-form'>
+            <div className='signup-form'>
                 <div className='form-box'>
-                <div className='form-value'>
-                    <form action='' onSubmit={(e)=>handleSubmit(e)}>
-                        <h2>Sign up</h2>
-                        <div className='inputbox'>
-                            <ion-icon name="person-outline"></ion-icon>
-                            <input type='text' value={username} onChange={(e)=>{
-                                e.preventDefault()
-                                setUsername(e.target.value)
-                            }} required/>
-                            <label for=''>Name</label>
-                        </div>
-                        <div className='inputbox'>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type='text' value={email} onChange={(e)=>{
-                                e.preventDefault()
-                                setEmail(e.target.value)
-                            }} required/>
-                            <label for=''>Email</label>
-                        </div>
-                        <div className='inputbox'>
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type='password' value={password} onChange={(e)=>{
-                                e.preventDefault()
-                                setPassword(e.target.value)
-                            }} required/>
-                            <label for=''>Password</label>
-                        </div>
-                        <div className='forget'>
-                            <label for=''><input type='checkbox'></input>Remember me?</label>
-                            {/* <a  className='forgotlink' href='#'>Forgot password?</a> */}
-                        </div>
-                        <button onClick={()=> handleSubmit()} type='submit'
-                        >Free Sign up</button>
-                        <div className='register'>
-                            <p>Don't have an account? <a href='#'> Log in</a> </p>
-                        </div>
-                    </form>
+                    <div className='form-value'>
+                        <form action='' onSubmit={(e)=>handleSubmit(e)}>
+                            <h2>Sign up</h2>
+                            <div className='inputbox'>
+                                <ion-icon name="person-outline"></ion-icon>
+                                <input type='text' value={username} onChange={(e)=>{
+                                    e.preventDefault()
+                                    setUsername(e.target.value)
+                                }} required/>
+                                <label for=''>Name</label>
+                            </div>
+                            <div className='inputbox'>
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type='text' value={email} onChange={(e)=>{
+                                    e.preventDefault()
+                                    setEmail(e.target.value)
+                                }} required/>
+                                <label for=''>Email</label>
+                            </div>
+                            <div className='inputbox'>
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type='password' value={password} onChange={(e)=>{
+                                    e.preventDefault()
+                                    setPassword(e.target.value)
+                                }} required/>
+                                <label for=''>Password</label>
+                            </div>
+                            <div className='forget'>
+                                <label for=''><input type='checkbox'></input>Remember me?</label>
+                                {/* <a  className='forgotlink' href='#'>Forgot password?</a> */}
+                            </div>
+                            <button onClick={()=> handleSubmit()} type='submit'
+                            >Free Sign up</button>
+                            <div className='register'>
+                                <p>Don't have an account? <a href='#'> Log in</a> </p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        
-            </div>
-            </div>
+            
+                </div>
+                </div>
         </div>             
 
         
