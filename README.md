@@ -31,6 +31,9 @@ press git clone https://github.com/Jobwawesh/my-portfolio-app-frontend on your t
 6. Open the application on your prefered browser.
 7. Run `npm start` to view the app in your prefered browser.
 
+### NB
+Ensure your back end is up and running to get real time backend data.    `rake start`
+
 ## Running the Application and Features
 ### User Story
 - This Application works with fetched data  from a remote server. The API used was created specifically for this app: https://my-app-backend-portfolio.onrender.com/project 
