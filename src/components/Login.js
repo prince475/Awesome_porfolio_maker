@@ -60,7 +60,7 @@ function Login() {
         <div className={show}>
             <div className='login-section'>
                 <div className='about-section'>
-                    <h1>Welcome to My Portfolio App</h1>
+                    <h1>Welcome to My-Portfolio App</h1>
 
                 </div>
                 <div className='form-box-login'>
@@ -83,7 +83,7 @@ function Login() {
                             </div>
                             <button type='submit' onClick={(e)=>{
                                 e.preventDefault()
-                                
+                                showing()
                                 ()}
                                 } >Login</button>
                             <div className='register' id='register'>
@@ -143,5 +143,5 @@ function Login() {
         
     )
 }
-
+  
 export default Login
