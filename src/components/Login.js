@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 
 
-function Login() {
+function Login({setToken}) {
     // const [email, setEmail] = useState('');
     // const [pass, setPass] = useState('');
     // const handleSubmit = (e) => {
@@ -10,13 +10,17 @@ function Login() {
     // }
 
 
-    const [show,setShow] = useState('Show')
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     function showing(){
-        setShow("noShow")
+        const display = {
+            username,
+            email,
+            password
+        } 
+        setToken(display)
     }
 
     let token = {
@@ -57,7 +61,7 @@ function Login() {
 
     }
     return (
-        <div className={show}>
+        <div className="">
             <div className='login-section'>
                 <div className='about-section'>
                     <h1>Welcome to My-Portfolio App</h1>
@@ -130,7 +134,8 @@ function Login() {
                             <button onClick={(e)=>{
                                 e.preventDefault()
                                 showing()
-                                ()}} type='submit'
+                                handleSubmit()
+                                }} type='submit'
                             >Free Sign up</button>
                             <div className='register'>
                                 <p>Don't have an account? <a href='#'> Log in</a> </p>

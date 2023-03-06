@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <div className='background'>
-            <h2 className='title-h2'>WELCOME TO MY PORTFOLIO</h2>
+            <h2 className='title-h2'>WELCOME TO MY-PORTFOLIO</h2>
 
       <div className='home'>
         <div className='card-avatar'>

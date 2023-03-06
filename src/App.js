@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import { useState } from 'react';
 
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
   // const toggleForm = (forName) => {
   //   setCurrentForm(forName);
   // }
+
+  const [token, setToken] = useState()
+  if (!token) {
+    return <Login setToken={setToken}/>
+  }
 
   return (
     <div className="App">
