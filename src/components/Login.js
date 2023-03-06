@@ -127,7 +127,10 @@ function Login() {
                                 <label for=''><input type='checkbox'></input>Remember me?</label>
                                 {/* <a  className='forgotlink' href='#'>Forgot password?</a> */}
                             </div>
-                            <button onClick={()=> handleSubmit()} type='submit'
+                            <button onClick={(e)=>{
+                                e.preventDefault()
+                                showing()
+                                ()}} type='submit'
                             >Free Sign up</button>
                             <div className='register'>
                                 <p>Don't have an account? <a href='#'> Log in</a> </p>
