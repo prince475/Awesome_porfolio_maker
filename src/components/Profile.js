@@ -56,7 +56,7 @@ function Home() {
 })
 }
 
-function handleAddSkil(){
+function handleAddSkill(){
 
     fetch('https://my-app-backend-portfolio.onrender.com/skill/create',{
         method: 'POST',
@@ -87,7 +87,7 @@ function handleAddSkil(){
             </div>
         </div>
 
-        <form className="add-project">
+        <form className="add-project" onSubmit={(e)=>{e.preventDefault()}}>
             <input className='input' type="text"  value={title}
             onChange={(e)=>{
                 e.preventDefault()
@@ -102,13 +102,13 @@ function handleAddSkil(){
             <button type="submit" onClick={handleAddDesciption} className="add-project-btn"> Add Project</button>
         </form>   
 
-        <form className="add-project">
+        <form className="add-project" onSubmit={(e)=>{e.preventDefault()}}>
             <input type="text" className='input' value={skills}
             onChange={(e)=>{
                 e.preventDefault()
                 setSkills(e.target.value)
             }} placeholder="Title"></input>
-            <button type="submit" onClick={handleAddSkil} className="add-project-btn" > Add Skill</button>
+            <button type="submit" onClick={handleAddSkill} className="add-project-btn" > Add Skill</button>
         </form>   
         <div className="registration">
             <div className="r-container">
