@@ -22,7 +22,7 @@ function Home() {
 
 
   useEffect( ()=>{
-      fetch("http://localhost:9292/skill")
+      fetch("https://my-app-backend-portfolio.onrender.com/skill")
       .then(res => res.json())
       .then(data =>{
           console.log(data)
@@ -32,7 +32,7 @@ function Home() {
 
 
   function deleteSkill(id){
-      fetch(`http://127.0.0.1:9292/skills/destroy/${id}`,{
+      fetch(`https://my-app-backend-portfolio.onrender.com/skills/destroy/${id}`,{
         method: "DELETE"
       })
       .then(()=>{
@@ -42,7 +42,7 @@ function Home() {
 
   function handleAddDesciption(){
 
-    fetch('http://127.0.0.1:9292/project/create',{
+    fetch('https://my-app-backend-portfolio.onrender.com/project/create',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ function Home() {
 
 function handleAddSkil(){
 
-    fetch('http://127.0.0.1:9292/skill/create',{
+    fetch('https://my-app-backend-portfolio.onrender.com/skill/create',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

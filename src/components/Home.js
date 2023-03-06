@@ -10,7 +10,7 @@ function Home() {
 
 
   useEffect( ()=>{
-      fetch("http://127.0.0.1:9292/project")
+      fetch("https://my-app-backend-portfolio.onrender.com/project")
       .then(res => res.json())
       .then(data =>{
           console.log(data)
@@ -20,7 +20,7 @@ function Home() {
 
 
   function deleteProject(id){
-      fetch(`http://127.0.0.1:9292/projects/destroy/${id}`,{
+      fetch(`https://my-app-backend-portfolio.onrender.com/projects/destroy/${id}`,{
         method: "DELETE"
       })
       .then(()=>{

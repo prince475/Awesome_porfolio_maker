@@ -31,7 +31,7 @@ function Login() {
     
     const handleSubmit = () => {
     
-        fetch('http://127.0.0.1:9292/auth/register',{
+        fetch('https://my-app-backend-portfolio.onrender.com/auth/register',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ function Login() {
 
         function handleLogIn(){
 
-            fetch('http://127.0.0.1:9292/auth/login',{
+            fetch('https://my-app-backend-portfolio.onrender.com/auth/login',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -59,9 +59,6 @@ function Login() {
     return (
         <div className={show}>
             <div className='login-section'>
-                {/* <div className='left-section'>
-                    ABOUT US
-                </div> */}
                 <div className='about-section'>
                     <h1>Welcome to My Portfolio App</h1>
 
