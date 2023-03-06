@@ -46,7 +46,7 @@ function Home() {
         <div className="registration">
             <div className="r-container">
                     <div className="r-left">
-                    <p className="r-title">Check out what others are working to get inspiration to be innovative...</p>
+                    <p className="r-title">Check out what others are working on to get inspiration to be innovative...</p>
                     
                  </div>
             </div>

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+
 body{
     max-width: 100%;
     font-family: "Poppins", sans-serif;
@@ -44,7 +47,6 @@ body{
     color: var(--BodyColor);
     font-size: 40px;
     margin-top: 2rem;
-    font-family: 'Mynerve', cursive;
 }
 
 .project-title{
@@ -52,7 +54,6 @@ body{
     margin-bottom: 0.5em;
     margin-top: -1em;
     color: var(--BodyColor);
-    font-family: 'Mynerve', cursive;
 }
 
 .skills-title{
@@ -60,7 +61,6 @@ body{
     margin-bottom: 0.5em;
     margin-top:-1em;
     color: rgb(254, 254, 253);
-    font-family: 'Mynerve', cursive;
 }
 
 .flex-container{
@@ -90,7 +90,6 @@ body{
 .project-list{
     font-size: 20px;
     color: var(--FifthColor);
-    font-family: "Poppins", sans-serif;
 
 }
 
@@ -110,7 +109,6 @@ body{
     font-weight: 400;
     font-size: 18px;
     cursor: pointer;
-    font-family:"Poppins", sans-serif;
     letter-spacing: 1px;
     margin-left: 50rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
