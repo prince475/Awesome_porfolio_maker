@@ -40,12 +40,6 @@ body{
     grid-gap: 20px;
 }
 
-.r-title{
-    color: var(--BodyColor);
-    font-size: 40px;
-    margin-top: 2rem;
-    font-family: 'Mynerve', cursive;
-}
 
 .project-title{
     font-size: 30px;
@@ -76,7 +70,7 @@ body{
     padding: 3em;
     height: 150px;
     border-radius: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -155,3 +149,7 @@ body{
     color: white;
     width: 10%;
   }
+
+  .delete-btn{
+    background-color: rgb(207, 168, 168);
+}

@@ -13,7 +13,7 @@ export default function ProfileCard({name, id, deleteSkill}) {
 
             <div key={id} className="skills-card">
                     <p className="project-title">{name}</p>
-                    <button onClick={()=> deleteSkill(id)}>delete<ion-icon name="trash-outline"></ion-icon></button>                
+                    <button className='delete-btn' onClick={()=> deleteSkill(id)}>delete<ion-icon name="trash-outline"></ion-icon></button>                
             </div> 
         </div>
             {/* <div key={id}>
