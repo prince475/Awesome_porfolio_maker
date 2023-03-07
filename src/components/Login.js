@@ -19,7 +19,7 @@ function Login({setToken}) {
             username,
             email,
             password
-        } 
+        }
         setToken(display)
     }
 
@@ -32,10 +32,10 @@ function Login({setToken}) {
         "email": email,
         "password_hash": password
     }
-    
+
     const handleSubmit = () => {
-    
-        fetch('https://my-app-backend-portfolio.onrender.com/auth/register',{
+
+        fetch('https://my-portfolio-application-sinatra.onrender.com/project/auth/register',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ function Login({setToken}) {
 
         function handleLogIn(){
 
-            fetch('https://my-app-backend-portfolio.onrender.com/auth/login',{
+            fetch('https://my-portfolio-application-sinatra.onrender.com/project/auth/login',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -143,13 +143,13 @@ function Login({setToken}) {
                         </form>
                     </div>
                 </div>
-            
-                </div>
-                </div>
-        </div>             
 
-        
+                </div>
+                </div>
+        </div>
+
+
     )
 }
-  
+
 export default Login

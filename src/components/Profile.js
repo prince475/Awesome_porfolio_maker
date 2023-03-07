@@ -22,7 +22,7 @@ function Home() {
 
 
   useEffect( ()=>{
-      fetch("https://my-app-backend-portfolio.onrender.com/skill")
+      fetch("https://my-todo-sinatra-backend-deployment-web.onrender.com/skill")
       .then(res => res.json())
       .then(data =>{
           console.log(data)
@@ -32,7 +32,7 @@ function Home() {
 
 
   function deleteSkill(id){
-      fetch(`https://my-app-backend-portfolio.onrender.com/skills/destroy/${id}`,{
+      fetch(`https://my-todo-sinatra-backend-deployment-web.onrender.com/skills/destroy/${id}`,{
         method: "DELETE"
       })
       .then(()=>{
@@ -42,7 +42,7 @@ function Home() {
 
   function handleAddDesciption(){
 
-    fetch('https://my-app-backend-portfolio.onrender.com/project/create',{
+    fetch('https://my-todo-sinatra-backend-deployment-web.onrender.com/project/create',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ function Home() {
 
 function handleAddSkill(){
 
-    fetch('https://my-app-backend-portfolio.onrender.com/skill/create',{
+    fetch('https://my-portfolio-application-sinatra.onrender.com/project/skill/create',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ function handleAddSkill(){
             }}
             placeholder="Description"></input>
             <button type="submit" onClick={handleAddDesciption} className="add-project-btn"> Add Project</button>
-        </form>   
+        </form>
 
         <form className="add-project" onSubmit={(e)=>{e.preventDefault()}}>
             <input type="text" className='input' value={skills}
@@ -109,7 +109,7 @@ function handleAddSkill(){
                 setSkills(e.target.value)
             }} placeholder="Title"></input>
             <button type="submit" onClick={handleAddSkill} className="add-project-btn" > Add Skill</button>
-        </form>   
+        </form>
         <div className="registration">
             <div className="r-container">
                     <div className="r-left">
@@ -118,16 +118,16 @@ function handleAddSkill(){
             </div>
 
             <div className="r2-container">
-                <div className="r-right"></div>    
+                <div className="r-right"></div>
                 <div className="flex-container">
-                   
+
                     {profile.map((value)=><ProfileCard name={value.name} key={value.id} id={value.id} deleteSkill={deleteSkill}/>)}
 
                 </div>
             </div>
-        </div>  
-        <div className="add-project"></div>   
-        
+        </div>
+        <div className="add-project"></div>
+
       </div>
     </div>
   )
